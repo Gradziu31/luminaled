@@ -1,0 +1,50 @@
+/* stylelint-disable */
+header {
+  .beam {
+    background: $darkblue;
+    padding: 5px 0;
+    a {
+      color: $white;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    .logo {
+      img {
+        max-width: 200px;
+        max-height: 50px;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      ul {
+        li:not(:last-of-type) {
+          a {
+            position: relative;
+            padding: 3px 10px;
+            color: black;
+            &:before {
+              height: 100%;
+              width: 1px;
+              top: 0;
+              background: $light-gray;
+              content: '';
+              position: absolute;
+              right: 0;
+            }
+          }
+        }
+        li:last-of-type {
+          a {
+            color: black;
+            position: relative;
+            padding: 3px 0 3px 10px;
+          }
+        }
+      }
+    }
+  }
+}

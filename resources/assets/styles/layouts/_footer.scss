@@ -1,0 +1,49 @@
+/* stylelint-disable */
+footer {
+    background: $darkblue;
+    color: $white;
+    background-image: url('images/map.png');
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    .title {
+        display: inline;
+        font-size: 1.2rem;
+        position: relative;
+        padding-bottom: 5px;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            background: $white;
+            width: 100%;
+        }
+    }
+    .content{
+        display: block;
+        margin-top: 10px;
+    }
+    .menu-footer {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            color: $white;
+        }
+    }
+}
+
+.copyright {
+    background: $copyright;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    text-align: center;
+    border-top: 1px solid $light-gray;
+    font-size: 0.8rem;
+}

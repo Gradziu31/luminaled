@@ -1,0 +1,23 @@
+/* stylelint-disable */
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+@import "~lightbox2/src/css/lightbox.css";
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+$white: #fff;
+$textblue: #2e97c7;
+$light-blue: #EFFBFF;
+$gray: rgba(167, 167, 167, 0.4);
+$single-box: rgba(243,243,243, 0.73);
+$darkblue: #112e40;
+$copyright: #051D29;
+$light-gray: #707070;
+$gray-text: #787878;
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+

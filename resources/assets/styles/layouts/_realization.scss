@@ -1,0 +1,34 @@
+/* stylelint-disable */
+.realization-box {
+    .single {
+        .content {
+            background: $single-box;
+            padding: 10px 15px;
+            .title {
+                display: inline;
+                font-size: 1.2rem;
+                position: relative;
+                padding-bottom: 5px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    height: 1px;
+                    background: $textblue;
+                    width: 100%;
+                }
+            }
+            .desc {
+                margin-top: 10px;
+                color: $gray-text;
+            }
+        }
+        .photo {
+            height: 170px;
+            width: 100%;
+            background-size: cover!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+    }
+}
